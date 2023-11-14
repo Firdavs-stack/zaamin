@@ -60,7 +60,7 @@ function browsersync(){
 
 function build(){
     return src([
-        'app/css/style.min.css', 
+        'app/css/styles.min.css', 
         'app/fonts/**/*',
         'app/js/main.min.js',
         'app/*.html'
