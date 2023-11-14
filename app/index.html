@@ -8,10 +8,7 @@
   rel="stylesheet"
   href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css"
 />
-    <link
-  rel="stylesheet"
-  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
-/>
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />   
     <link rel="stylesheet" href="./css/styles.min.css">
 </head>
 <body>
@@ -22,7 +19,7 @@
             </a>
             <ul class="header__menu">
                 <li class="header__menu-item">
-                    <a class="header__menu-link">
+                    <a href="cable-car.html" class="header__menu-link">
                         Канатная дорога
                     </a>
                 </li>
@@ -37,7 +34,7 @@
                     </a>
                 </li>
                 <li class="header__menu-item">
-                    <a class="header__menu-link">
+                    <a href="about.html" class="header__menu-link">
                         О нас 
                     </a>
                 </li>
@@ -45,14 +42,14 @@
         </nav>
         <div class="header__main">  
                 <div class="swiper header__slider">
-                    <div class="header__slider-wrapper swiper-wrapper">
-                        <div class="header__slider-slide swiper-slide">
+                    <div class=" swiper-wrapper header__slider-wrapper">
+                        <div class="swiper-slide header__slider-slide">
                             <img class="header__slider-image" src="./images/slider-1.png"/>
                         </div>
-                        <div class="header__slider-slide swiper-slide">
+                        <div class="swiper-slide header__slider-slide">
                             <img class="header__slider-image" src="./images/slider-2.png"/>
                         </div>
-                        <div class="header__slider-slide swiper-slide">
+                        <div class="swiper-slide header__slider-slide">
                             <img class="header__slider-image" src="./images/slider-3.png"/>
                         </div>
                     </div>
@@ -80,7 +77,7 @@
     <section class="block what-do">
         <div class="container">
         <h2 class="block__title">Чем заняться?</h2>  
-      <div class="block__items">
+      <div class="block__items what-do__items">
         <div class="block__item what-do__item">
             <div class="block__imagebox">
                 <img class="block__image" src="./images/kinder.jpg" alt="image: block item image"/>
@@ -123,7 +120,7 @@
             </div>
             <div class="block__item news__item">
                 <div class="block__imagebox news__imagebox">
-                    <img class="block__image" src="./images/slider-1.png" alt="image: news image"/>
+                    <img class="block__image" src="./images/slider-3.png" alt="image: news image"/>
                 </div>
                 <h5 class="block__item-subtitle news__subtitle">Открытие ресторана ZAAMIN</h5>
                 <a class="news__btn">
@@ -227,7 +224,7 @@
         </ul>
     </nav>
     <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
     <script src="./js/main.min.js"></script>
 </body>
 </html>

@@ -1,6 +1,6 @@
-$green: #2E9564;
-$text-main: #0F613A;
-$light-green: #61CA98;
+$green: #006266;
+$text-main: #006266;
+$light-green: #16a085;
 
 /////////////////////////////////////Monserrat////////////////////////////////////////////////////
 @font-face {
@@ -12,7 +12,7 @@ $light-green: #61CA98;
     font-display: swap;
 }
 @font-face {
-    font-family: 'MoserratMedium';
+    font-family: 'MonserratMedium';
     src: url('../fonts/Montserrat-Medium.woff2') format("woff2"),
         url('../fonts/Montserrat-Medium.woff') format("woff");
     font-weight: 500;
@@ -28,7 +28,7 @@ $light-green: #61CA98;
     font-display: swap;
 }
 @font-face {
-    font-family: 'MoserratBold';
+    font-family: 'MonserratBold';
     src: url('../fonts/Montserrat-Bold.woff2') format("woff2"),
         url('../fonts/Montserrat-Bold.woff2') format("woff");
     font-weight: 700;
@@ -71,8 +71,17 @@ $light-green: #61CA98;
     font-display: swap;
 }
 /////////////////////////////////////.......////////////////////////////////////////////////////
-
-
+*,
+*::after,
+*::before{
+    box-sizing: border-box;
+}
+html{
+    box-sizing: inherit;
+}
+html,body{
+    height: 100%;
+}
 h1,h2,h3,h4,h5,h6,p{
     margin: 0;
     font-size: unset;   
@@ -80,6 +89,7 @@ h1,h2,h3,h4,h5,h6,p{
 }
 .container{
     max-width: 1280px;
+    height: 100%;
     padding: 0 15px;
     margin: 0 auto;
 }

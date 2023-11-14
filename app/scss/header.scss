@@ -1,0 +1,143 @@
+.header {
+    margin-bottom: 60px;
+    font-family: 'RalewayRegular',sans-serif;
+    color: white;
+    &__menu {
+        display: flex;
+        align-items: center;
+        gap: 50px;
+    }
+
+    &__menu-item {
+        list-style: none;
+    }
+
+    &__menu-link {
+        cursor: pointer;
+        color: unset;
+        outline: unset; 
+        background: unset;
+        text-decoration: unset;
+    }
+
+    &__page-main{
+        width: 100%;
+        position: relative;
+        height: 50vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__main {
+        position: relative;
+        height: 90vh;
+    }
+
+    &__slider {
+        width: 100%;
+        height: 100%    ;
+    }
+
+    &__slider-image{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    &__page-imagebox{
+        width: 100%;
+        height: 100%;
+    }
+
+    &__page-image{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    &__infobox{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__page-infobox{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__infobox,&__page-infobox {
+        width: 90%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 3;
+    }
+
+    &__overflow{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba($color: #355367, $alpha:0.75);
+        z-index: 2;
+    }
+
+    &__infobox-left {
+        max-width: 750px;
+    }
+
+    &__title {
+        font-family: 'MonserratBold',sans-serif;
+        font-size: 80px;
+        margin-bottom: 20px;
+    }
+    &__subtitle{
+        margin-top: 0;
+        font-size: 25px;
+    }
+    
+    &__text{
+        font-size: 16px;
+        font-family: 'RalewayRegular',sans-serif;
+    }
+    
+    &__infobox-right {
+        font-size: 25px;
+    }
+    &__workingIcon{
+        width: 60px;
+        height: 60px;
+        fill-rule: evenodd;
+        fill: white;
+    }
+
+    &__cardIcon{
+        width: 60px;
+        height: 60px;
+        fill: white;
+    }
+
+    &__workingTime {
+        display: flex;
+        align-items: center;
+        gap: 30px;
+        margin-bottom: 60px;
+
+    }
+
+    &__info-title {
+        font-family: 'RalewayBold',sans-serif;
+    }
+
+    &__working-text {
+        display: grid;
+        text-align: center;
+
+    }
+}

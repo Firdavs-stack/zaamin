@@ -8,7 +8,7 @@ const imagemin = require('gulp-imagemin');
 const del = require('del');
 
 function styles (){
-    return src(['app/scss/styles.scss','node_modules/normalize.css/normalize.css'])
+    return src(['app/scss/**/*.scss','node_modules/normalize.css/normalize.css'])
             .pipe(scss({outputStyle: 'compressed'}))
             .pipe(concat('styles.min.css'))
             .pipe(dest('app/css'))
