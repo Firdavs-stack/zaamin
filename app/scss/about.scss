@@ -12,6 +12,54 @@
         align-items: center;
     }
 }
+.price {
+    
+    &__table {
+        width: 100%;
+        height: auto;
+        border: 1px solid $light-green;
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+    }
+
+    &__table-item {
+        display: grid;
+        &:not(:last-child){
+            border-right: 1px solid $light-green;
+        }
+    }
+
+    &__table-title {
+        font-family: "MonserratBold",sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        font-size: 18px;
+        &:not(:last-child){
+            border-bottom: 1px solid $light-green;
+        }
+    }
+
+    &__table-with{
+
+    }
+
+    &__table-explain{
+        font-size: 14px ;
+        color: $light-green;
+    }
+
+    &__table-info {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 22px;
+        &:not(:last-child){
+            border-bottom: 1px solid $light-green;
+        }
+        }
+}
+
 .schedule{
     font-size: 22px;
     span{

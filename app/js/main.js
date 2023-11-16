@@ -24,3 +24,24 @@ questItems.forEach(item => item.addEventListener('click',(e) => {
     }else{
   item.classList.toggle('__active');}
 }));
+
+
+async function initMap() {
+  await ymaps3.ready;
+
+  const {YMap, YMapDefaultSchemeLayer} = ymaps3;
+
+  const map = new YMap(
+      document.querySelector('.contacts-info__map'),
+      {
+          location: {
+              center: [37.588144, 55.733842],
+              zoom: 10
+          }
+      }
+  );
+
+  map.addChild(new YMapDefaultSchemeLayer());
+}
+
+initMap();

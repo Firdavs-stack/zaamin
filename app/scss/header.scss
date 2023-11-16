@@ -1,3 +1,5 @@
+@import './globals.scss';
+
 .header {
     margin-bottom: 60px;
     font-family: 'RalewayRegular',sans-serif;
@@ -140,5 +142,41 @@
         display: grid;
         text-align: center;
 
+    }
+}
+.burger{
+    display: none;
+}
+@media (max-width: 924px){
+    .burger{
+        display: block;
+        position: relative;
+        width: 25px;
+        height: 18px;
+        &::after,&::before{
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 2px;
+            background-color: white;
+        }
+        &::after{
+            top:50%;
+            transform: translateY(-50%);
+        }
+        &::before{
+            bottom: 0;
+            left: 0;
+        }
+        div{
+            background-color: white;
+            width: 100%;
+            height: 2px;
+        }
+    }
+    .header{
+        &__menu{
+            display: none;
+        }
     }
 }
