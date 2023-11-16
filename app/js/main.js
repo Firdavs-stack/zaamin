@@ -35,7 +35,7 @@ async function initMap() {
       document.querySelector('.contacts-info__map'),
       {
           location: {
-              center: [37.588144, 55.733842],
+              center: [41.37785307413559,69.32162499999995],
               zoom: 10
           }
       }

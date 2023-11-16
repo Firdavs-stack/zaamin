@@ -1,0 +1,63 @@
+@import './globals.scss';
+
+.contacts-info {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    &__text {
+        font-size: 20px;
+    }
+
+    &__phone-info,&__social {
+        display: grid;
+        gap: 13px;
+        text-align: center;
+        font-family: 'RalewaySemibold',sans-serif;
+        font-size: 18px;
+    }
+
+    &__phone {
+        font-family: 'MonserratMedium',sans-serif;
+    }
+
+    &__email {
+    }
+
+    &__social {
+
+    }
+
+    &__social-items {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+
+    &__social-link {
+        cursor: pointer;
+        svg{
+            width: 50px;
+            height: 50px;
+        }
+        svg circle{
+            fill: white;
+        }
+        svg path{
+            fill: $light-green;
+        }
+    }
+
+    &__map-wrapper{
+        display: flex;
+        flex-direction: columns;
+        justify-content: flex-end;
+        align-items: flex-end;
+    }
+
+    &__map {
+
+    }
+}
