@@ -1,0 +1,147 @@
+@import './globals.scss';
+
+.footer {
+    font-family: 'RalewayRegular',sans-serif;
+    padding: 30px 0;
+    background-color: $green;
+    color: white;
+    &__top {
+        margin-bottom: 25px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__naming {
+    }
+
+    &__menu {
+        padding: 10px 0;
+        position: relative;
+        width: 100%;
+        height: auto;
+        margin-bottom: 20px;
+        &::after,&::before{
+            content: '';
+            width: 100%;
+            height: 1px;
+            background-color: white;
+            position: absolute;
+        }
+        &::after{
+            top: 0;
+            left: 0;
+        }
+        &::before{
+            bottom: 0;
+            right: 0;
+        }
+    }
+
+    &__menu-list {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    &__menu-item {
+        list-style: none;
+    }
+
+    &__menu-link {
+        font-size: 20px;
+    }
+
+    &__bottom {
+        height: 220px;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+
+    &__contacts {
+    }
+
+    &__social {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-end;
+        height: 100%;
+    }
+
+    &__social-block {
+        display: grid;
+        gap: 20px;
+    }
+
+    &__social-items {
+    }
+
+    &__social-item {
+    }
+
+    &__social-link {
+    }
+
+    &__dev {
+    }
+
+    &__dev-link {
+    }
+
+    &__contacts {
+        display: grid;
+        gap: 15px;
+        font-family: 'RalewayRegular',sans-serif;
+    }
+
+    &__contacts-items {
+        display: grid;
+        gap: 10px;
+    }
+
+    &__contacts-item {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+
+    &__contacts-imagebox {
+        width: 25px;
+        height: 25px;
+        img{
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    &__contacts-infobox {
+        display: grid;
+        gap: 5px;
+    }
+
+    &__contacts-title {
+        font-family: 'MonserratMedium',sans-serif;
+    }
+}
+.social {
+
+    &__items {
+        display: flex;
+        gap: 10px;
+    }
+
+    &__item {
+    }
+    &__link{
+        display: inline-block;
+        width: 25px;
+        height: 25px;
+        img{
+            object-fit: contain;
+            width: 100%;
+            height: 100%;
+        }
+    }
+}
