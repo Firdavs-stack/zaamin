@@ -215,6 +215,9 @@ body{
         grid-area: item7;
     }
 }
+.burger{
+    display: none;
+}
 @media (max-width: 924px){
     .header{
         &__infobox-right{
