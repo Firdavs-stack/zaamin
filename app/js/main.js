@@ -100,24 +100,24 @@ window.addEventListener('DOMContentLoaded',() => {
   },0.6)
   
   
-  const t2 = gsap.timeline({
-    scrollTrigger: '.what-do',
-  })
+//   const t2 = gsap.timeline({
+//     scrollTrigger: '.what-do',
+//   })
   
-  t2.from('.what-do .block__title',{
-    y:-250,
-    opacity:0
-  },0.1)
-  .from('.what-do .block__item:first-child',{
-    x: -250,
-    opacity:0
-  },0,2)
-  .from('.what-do .block__item:last-child',{
-    x: 250,
-    opacity:0
-  },0.3)
-  .from('.what-do .block__item:not(:last-child):not(:first-child)',{
-    y: -250,
-    opacity:0
-  },0.5)
-})
+//   t2.from('.what-do .block__title',{
+//     y:-250,
+//     opacity:0
+//   },0.1)
+//   .from('.what-do .block__item:first-child',{
+//     x: -250,
+//     opacity:0
+//   },0,2)
+//   .from('.what-do .block__item:last-child',{
+//     x: 250,
+//     opacity:0
+//   },0.3)
+//   .from('.what-do .block__item:not(:last-child):not(:first-child)',{
+//     y: -250,
+//     opacity:0
+//   },0.5)
+// })
