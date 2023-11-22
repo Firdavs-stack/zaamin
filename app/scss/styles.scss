@@ -31,6 +31,10 @@ body{
 .navbar {
 }
 .logo {
+    outline: none;
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
 }
 .block {
     font-family: 'RalewayRegular',sans-serif;
@@ -328,6 +332,22 @@ body{
     .price{
         &__table-info,&__table-title{
             padding: 5px;
+        }
+    }
+    .footer{
+        &__menu-list{
+            flex-direction: column;
+            gap: 20px;
+        }
+        &__bottom{
+            height: auto;
+            flex-direction: column;
+        }
+        &__social{
+            align-items: flex-start;
+        }
+        &__contacts{
+            margin-bottom: 25px;
         }
     }
 }

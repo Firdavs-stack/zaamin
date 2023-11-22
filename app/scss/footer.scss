@@ -59,13 +59,10 @@
         align-items: flex-start;
     }
 
-    &__contacts {
-    }
-
     &__social {
         display: flex;
         flex-direction: column;
-        justify-content: space-between;
+        gap: 20px;
         align-items: flex-end;
         height: 100%;
     }

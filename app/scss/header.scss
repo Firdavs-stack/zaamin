@@ -5,10 +5,14 @@
     font-family: 'RalewayRegular',sans-serif;
     color: white;
     &__mobile-menu.__active{
+        display: flex;
+        justify-content: center;
+        align-items: center;
         transform: translateX(0);
         transition: all ease 0.4s;
     }
     &__mobile-menu {
+        display: none;
         overflow: hidden;
         position: absolute;
         top: 69px;
