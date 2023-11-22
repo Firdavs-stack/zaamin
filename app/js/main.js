@@ -120,4 +120,4 @@ window.addEventListener('DOMContentLoaded',() => {
 //     y: -250,
 //     opacity:0
 //   },0.5)
-// })
+})
