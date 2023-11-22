@@ -306,6 +306,18 @@ body{
     }
 }
 @media (max-width: 730px){
+    .gallery{
+        &__items{
+            grid-template-columns:  repeat(2,1fr);
+            grid-template-areas:
+            'item1 item1'
+            'item2 item3'
+            'item4 item4'
+            'item5 item6'
+            'item7 item7'
+        ;
+        }
+    }
     .header{
         &__infobox{
             flex-direction: column;
@@ -355,6 +367,20 @@ body{
     }
 }
 @media (max-width: 490px){
+    .gallery{
+        &__items{
+            grid-template-columns:  1fr;
+            grid-template-areas: 
+            'item1'
+            'item2'
+            'item3'
+            'item4'
+            'item5'
+            'item6'
+            'item7'
+        ;
+        }
+    }
     .header{
         &__workingTime{
             align-items: center;

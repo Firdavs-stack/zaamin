@@ -80,6 +80,7 @@ html{
     box-sizing: inherit;
 }
 html,body{
+    background-color: white;
     height: 100%;
     overflow-x: hidden;
 }
@@ -120,7 +121,7 @@ a{
     background-color: white;
     z-index: 100;
 }
-.loade{
+.loader{
     display: none;
     animation: unset;
 }
