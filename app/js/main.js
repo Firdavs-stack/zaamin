@@ -161,10 +161,7 @@ const t5 = gsap.timeline({
 scrollTrigger: 'footer'
 })
 
-t5.from('.footer .logo',{
-x:-250,
-opacity:0
-},0.1)
+t5
 .from('.footer__naming',{
 x:250,
 opacity: 0,
