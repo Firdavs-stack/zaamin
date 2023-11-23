@@ -102,92 +102,92 @@ t1.from('.header',{
 },0.6)
 
 
-const t2 = gsap.timeline({
-  scrollTrigger: {
-    trigger: '.what-do',
-  },
-})
+// const t2 = gsap.timeline({
+//   scrollTrigger: {
+//     trigger: '.what-do',
+//   },
+// })
 
-t2.from('.what-do .block__title',{
-  y:-250,
-  opacity:0
-},0.1)
-.from('.what-do .block__item:first-child',{
-  x: -250,
-  opacity:0
-},0,2)
-.from('.what-do .block__item:last-child',{
-  x: 250,
-  opacity:0
-},0.3)
-.from('.what-do .block__item:not(:last-child):not(:first-child)',{
-  y: -250,
-  opacity:0
-},0.5)
+// t2.from('.what-do .block__title',{
+//   y:-250,
+//   opacity:0
+// },0.1)
+// .from('.what-do .block__item:first-child',{
+//   x: -250,
+//   opacity:0
+// },0,2)
+// .from('.what-do .block__item:last-child',{
+//   x: 250,
+//   opacity:0
+// },0.3)
+// .from('.what-do .block__item:not(:last-child):not(:first-child)',{
+//   y: -250,
+//   opacity:0
+// },0.5)
 
-const t3 = gsap.timeline({
-scrollTrigger: '.news'
-})
+// const t3 = gsap.timeline({
+// scrollTrigger: '.news'
+// })
 
-t3.from('.news .block__title',{
-y:-250,
-opacity:0
-},0.1)
-.from('.news__item',{
-x: -250,
-opacity:0,
-stagger: 0.2,
-})
+// t3.from('.news .block__title',{
+// y:-250,
+// opacity:0
+// },0.1)
+// .from('.news__item',{
+// x: -250,
+// opacity:0,
+// stagger: 0.2,
+// })
 
-const t4 = gsap.timeline({
-scrollTrigger: '.gallery'
-})
+// const t4 = gsap.timeline({
+// scrollTrigger: '.gallery'
+// })
 
-t4.from('.gallery .block__title',{
-y:-250,
-opacity:0
-},0.1)
-.from('.gallery__item:first-child',{
-y:-250,
-opacity: 0,
-})
-.from('.gallery__item:not(:first-child)',{
-x:-250,
-opacity: 0,
-stagger: 0.2
-})
+// t4.from('.gallery .block__title',{
+// y:-250,
+// opacity:0
+// },0.1)
+// .from('.gallery__item:first-child',{
+// y:-250,
+// opacity: 0,
+// })
+// .from('.gallery__item:not(:first-child)',{
+// x:-250,
+// opacity: 0,
+// stagger: 0.2
+// })
 
-const t5 = gsap.timeline({
-scrollTrigger: 'footer'
-})
+// const t5 = gsap.timeline({
+// scrollTrigger: 'footer'
+// })
 
-t5
-.from('.footer__naming',{
-x:250,
-opacity: 0,
-})
-.from('.footer__menu::after',{
-width: 0,
-},0.2)
-.from('.footer__menu::before',{
-width: 0,
-},0.2)
-.from('.footer__menu-item',{
-y:250,
-opacity:0,
-stagger: 0.1
-},0.3)
-.from('.footer__contacts-item',{
-x:-250,
-opacity: 0,
-stagger: 0.2
-},0.5)
-.from('.footer__social-item',{
-x:-250,
-opacity: 0,
-stagger: 0.2
-},0.5)
-.from('.footer__dev',{
-opacity:0
-})
+// t5
+// .from('.footer__naming',{
+// x:250,
+// opacity: 0,
+// })
+// .from('.footer__menu::after',{
+// width: 0,
+// },0.2)
+// .from('.footer__menu::before',{
+// width: 0,
+// },0.2)
+// .from('.footer__menu-item',{
+// y:250,
+// opacity:0,
+// stagger: 0.1
+// },0.3)
+// .from('.footer__contacts-item',{
+// x:-250,
+// opacity: 0,
+// stagger: 0.2
+// },0.5)
+// .from('.footer__social-item',{
+// x:-250,
+// opacity: 0,
+// stagger: 0.2
+// },0.5)
+// .from('.footer__dev',{
+// opacity:0
+// })
 })
