@@ -63,61 +63,134 @@ window.addEventListener('DOMContentLoaded',() => {
   
   gsap.registerPlugin(ScrollTrigger);
   
-  const t1 = gsap.timeline({
-    scrollTrigger: 'body',
-  })
-  
-  t1.from('.header',{
-    opacity: 0,
-  },0,1)
-  .from('.navbar',{
-    opacity:0
-  },0,1)
-  .from('.logo',{
-    x:-250,
-    opacity:0
-  },0.2)
-  .from('.header__menu-item',{
-    stagger: 0.1,
-    x:250,
-    opacity:0
-  },0.2)
-  .from('.header__title',{
-    y: 250,
-    opacity:0
-  },0,3)
-  .from('.header__subtitle',{
-    y: 250,
-    opacity:0
-  },0.4)
-  .from('.header__workingTime',{
-    y: -250,
-    opacity:0
-  },0.5)
-  .from('.pricing',{
-    y: 250,
-    opacity:0
-  },0.6)
-  
-  
-//   const t2 = gsap.timeline({
-//     scrollTrigger: '.what-do',
-//   })
-  
-//   t2.from('.what-do .block__title',{
-//     y:-250,
-//     opacity:0
-//   },0.1)
-//   .from('.what-do .block__item:first-child',{
-//     x: -250,
-//     opacity:0
-//   },0,2)
-//   .from('.what-do .block__item:last-child',{
-//     x: 250,
-//     opacity:0
-//   },0.3)
-//   .from('.what-do .block__item:not(:last-child):not(:first-child)',{
-//     y: -250,
-//     opacity:0
-//   },0.5)
+
+
+const t1 = gsap.timeline({
+  scrollTrigger: '.header',
+})
+
+t1.from('.header',{
+  opacity: 0,
+},0,1)
+.from('.navbar',{
+  opacity:0
+},0,1)
+.from('.logo',{
+  x:-250,
+  opacity:0
+},0.2)
+.from('.header__menu-item',{
+  stagger: 0.1,
+  x:250,
+  opacity:0
+},0.2)
+.from('.header__title',{
+  y: 250,
+  opacity:0
+},0,3)
+.from('.header__subtitle',{
+  y: 250,
+  opacity:0
+},0.4)
+.from('.header__workingTime',{
+  y: -250,
+  opacity:0
+},0.5)
+.from('.pricing',{
+  y: 250,
+  opacity:0
+},0.6)
+
+
+const t2 = gsap.timeline({
+  scrollTrigger: {
+    trigger: '.what-do',
+  },
+})
+
+t2.from('.what-do .block__title',{
+  y:-250,
+  opacity:0
+},0.1)
+.from('.what-do .block__item:first-child',{
+  x: -250,
+  opacity:0
+},0,2)
+.from('.what-do .block__item:last-child',{
+  x: 250,
+  opacity:0
+},0.3)
+.from('.what-do .block__item:not(:last-child):not(:first-child)',{
+  y: -250,
+  opacity:0
+},0.5)
+
+const t3 = gsap.timeline({
+scrollTrigger: '.news'
+})
+
+t3.from('.news .block__title',{
+y:-250,
+opacity:0
+},0.1)
+.from('.news__item',{
+x: -250,
+opacity:0,
+stagger: 0.2,
+})
+
+const t4 = gsap.timeline({
+scrollTrigger: '.gallery'
+})
+
+t4.from('.gallery .block__title',{
+y:-250,
+opacity:0
+},0.1)
+.from('.gallery__item:first-child',{
+y:-250,
+opacity: 0,
+})
+.from('.gallery__item:not(:first-child)',{
+x:-250,
+opacity: 0,
+stagger: 0.2
+})
+
+const t5 = gsap.timeline({
+scrollTrigger: 'footer'
+})
+
+t5.from('.footer .logo',{
+x:-250,
+opacity:0
+},0.1)
+.from('.footer__naming',{
+x:250,
+opacity: 0,
+})
+.from('.footer__menu::after',{
+width: 0,
+},0.2)
+.from('.footer__menu::before',{
+width: 0,
+},0.2)
+.from('.footer__menu-item',{
+y:250,
+opacity:0,
+stagger: 0.1
+},0.3)
+.from('.footer__contacts-item',{
+x:-250,
+opacity: 0,
+stagger: 0.2
+},0.5)
+.from('.footer__social-item',{
+x:-250,
+opacity: 0,
+stagger: 0.2
+},0.5)
+.from('.footer__dev',{
+opacity:0
+})
 })
